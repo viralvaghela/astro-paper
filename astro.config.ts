@@ -8,7 +8,8 @@ import { SITE } from "./src/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: SITE.website,
+  site: SITE.website, output: 'static',
+  outDir: './docs',
   integrations: [
     tailwind({
       applyBaseStyles: false,
